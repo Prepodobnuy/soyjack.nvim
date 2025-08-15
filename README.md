@@ -84,5 +84,6 @@ Matching color configurations are available for:
 - Tmux
 - Kitty
 - iTerm2
+- Warp
 
 Please see those tools' respective documentation for how to use these color configurations.
