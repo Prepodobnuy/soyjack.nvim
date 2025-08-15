@@ -81,9 +81,10 @@ A template for using the plugin with non-default options:
 
 Matching color configurations are available for:
 
-- Tmux
-- Kitty
+- Ghostty
 - iTerm2
+- Kitty
+- Tmux
 - Warp
 
 Please see those tools' respective documentation for how to use these color configurations.
