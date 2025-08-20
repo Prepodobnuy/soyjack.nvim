@@ -16,7 +16,7 @@ return {
 
   -- accent
   v_select = "#121E42",
-  v_select_nontext = "#4833A4",
+  v_select_nontext = "#402D93",
   string = "#74BAA8",
   raw_string = "#0EC256",
   cursor = "#5DCD9A",
