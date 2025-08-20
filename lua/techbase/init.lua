@@ -39,7 +39,7 @@ function M.load(theme)
   theme = ok and theme or require("techbase.palettes.techbase")
 
   local c = vim.deepcopy(theme)
-  local groups = vim.deepcopy(require("techbase.core_hl_groups"))
+  local groups = vim.deepcopy(require("techbase.highlights"))
 
   groups["Comment"].italic = M.opts.italic_comments
 
