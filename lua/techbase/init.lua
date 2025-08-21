@@ -64,12 +64,10 @@ function M.load(theme)
     end
   end
 
-  local extra
-  if type(M.opts.overrides) == "function" then
-    extra = M.opts.overrides(vim.deepcopy(groups))
-  else
-    extra = M.opts.overrides
-  end
+  local overrides = M.opts.hl_overrides
+  local extra = type(overrides) == "function"
+      and overrides(vim.deepcopy(groups))
+    or overrides
 
   if extra and next(extra) then
     groups = vim.tbl_deep_extend("force", groups, extra)
