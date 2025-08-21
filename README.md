@@ -26,7 +26,7 @@ A colorscheme inspired by
 
 </details>
 
-## Installation and Configuration
+## Installation
 
 To use the color scheme with default options with Lazy.nvim:
 
@@ -39,6 +39,8 @@ To use the color scheme with default options with Lazy.nvim:
     priority = 1000
 }
 ```
+
+## Configuration
 
 A template for using the plugin with non-default options:
 
@@ -74,10 +76,12 @@ A template for using the plugin with non-default options:
 }
 ```
 
-See [here](https://github.com/mcauley-penney/techbase.nvim/tree/main/lua/techbase/plugins) for a list of plugins that Techbase supports.
-
 > [!IMPORTANT]
 > To load the color scheme by default and use non-default options, you should load the options, then the scheme. This is how the template above is set up.
+
+### Plugin Support
+
+All plugins that techbase supports are enabled by default. You do not need to specify the ones you want to enable, only those you wish to disable. See [here](https://github.com/mcauley-penney/techbase.nvim/tree/main/lua/techbase/plugins) for a list of plugins that Techbase supports.
 
 Some plugins need extra configuration to work. These include:
 
