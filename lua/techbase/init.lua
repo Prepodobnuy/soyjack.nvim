@@ -1,35 +1,36 @@
 local M = {}
+local SUPPORTED_PLUGINS = require("techbase.plugins.supported_plugins")
 
 local defaults = {
   italic_comments = false,
   transparent = false,
-  plugin_support = {
-    aerial = false,
-    blink = false,
-    edgy = false,
-    gitsigns = false,
-    hl_match_area = false,
-    lazy = false,
-    mason = false,
-    mini_cursorword = false,
-    nvim_cmp = false,
-    vim_illuminate = false,
-    visual_whitespace = false,
-  },
+  plugin_support = vim.deepcopy(SUPPORTED_PLUGINS),
   hl_overrides = {},
 }
 
 M.opts = vim.deepcopy(defaults)
 
+local function normalize_plugin_support(user)
+  if user == nil or user == true then return SUPPORTED_PLUGINS end
+
+  if user == false then return {} end
+
+  if user.only then
+    local eff = {}
+    for _, n in ipairs(user.only) do
+      eff[n] = true
+    end
+
+    return eff
+  end
+
+  return M.opts.plugin_support
+end
+
 function M.setup(opts)
   M.opts = vim.tbl_deep_extend("force", {}, defaults, opts or {})
 
-  M.opts.plugin_support = vim.tbl_deep_extend(
-    "force",
-    {},
-    defaults.plugin_support,
-    opts.plugin_support or {}
-  )
+  M.opts.plugin_support = normalize_plugin_support(opts.plugin_support)
 end
 
 function M.load(theme)
@@ -57,8 +58,8 @@ function M.load(theme)
     end
   end
 
-  for name, enabled in pairs(M.opts.plugin_support) do
-    if enabled then
+  for name, setting in pairs(M.opts.plugin_support) do
+    if setting == true then
       ok, module = pcall(require, "techbase.plugins." .. name)
       if ok then module(c, groups) end
     end

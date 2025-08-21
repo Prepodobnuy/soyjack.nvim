@@ -52,19 +52,19 @@ A template for using the plugin with non-default options:
       -- signcolumn, foldcolumn, and tabline transparent
       transparent = false,
 
+      -- Here, you can disable plugins. All plugins that techbase supports
+      -- are enabled by default. You do not need to specify the ones you
+      -- want to enable, only those you wish to disable. This table
+      -- accepts key-pair values.
       plugin_support = {
-        aerial = false,
-        blink = false,
-        edgy = false,
-        gitsigns = false,
-        hl_match_area = false,
-        lazy = false,
-        mason = false,
-        mini_cursorword = false,
-        nvim_cmp = false,
-        vim_illuminate = false,
         visual_whitespace = false,
       },
+
+      -- You can enable *only* some plugins by using the "only" table
+      -- inside of the "plugin_support" table. This table accepts strings.
+      -- plugin_support = {
+      --   only = { "visual_whitespace" }
+      -- },
 
       -- allows you to override any highlight group for finer-grained control
       hl_overrides = {},
@@ -73,6 +73,8 @@ A template for using the plugin with non-default options:
     priority = 1000
 }
 ```
+
+See [here](https://github.com/mcauley-penney/techbase.nvim/tree/main/lua/techbase/plugins) for a list of plugins that Techbase supports.
 
 > [!IMPORTANT]
 > To load the color scheme by default and use non-default options, you should load the options, then the scheme. This is how the template above is set up.
@@ -95,11 +97,9 @@ Some plugins need extra configuration to work. These include:
 
 </details>
 
-## Plugin Support and Extras
+## Extras
 
-Techbase supports a growing list of plugins, found [here](https://github.com/mcauley-penney/techbase.nvim/tree/main/lua/techbase/plugins).
-
-Matching color configurations are available for external tools:
+Matching color schemes are available for external tools:
 
 - Ghostty
 - iTerm2
@@ -107,4 +107,4 @@ Matching color configurations are available for external tools:
 - Tmux
 - Warp
 
-Please see those tools' respective documentation for how to use these color configurations.
+Please see those tools' respective documentation for how to use these configurations.
