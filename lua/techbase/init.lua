@@ -10,7 +10,6 @@ local defaults = {
     gitsigns = false,
     hl_match_area = false,
     lazy = false,
-    lualine = false,
     mason = false,
     mini_cursorword = false,
     nvim_cmp = false,
@@ -60,9 +59,8 @@ function M.load(theme)
 
   for name, enabled in pairs(M.opts.plugin_support) do
     if enabled then
-      local req = "techbase.plugins." .. name
-      local mod = require(req)
-      mod(c, groups)
+      ok, module = pcall(require, "techbase.plugins." .. name)
+      if ok then module(c, groups) end
     end
   end
 

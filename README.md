@@ -4,10 +4,11 @@
 <sub><i>You have entered deeply into the infested starport. But something is wrong.</i></sub>
 </p>
 
-A colorscheme inspired by 
-- Doom, particulary [Techbase-style](https://doomwiki.org/wiki/Techbase_map) maps, 
-- 1990's technology and conceptions of future technologies, and 
-- sci-fi and cosmic horror.
+A colorscheme inspired by
+
+- The original Doom games, particulary [Techbase-style](https://doomwiki.org/wiki/Techbase_map) maps,
+- 1990's technology and conceptions of future technologies, and
+- sci-fi, sci-fi horror, and cosmic horror.
 
 ## Screenshots
 
@@ -58,7 +59,6 @@ A template for using the plugin with non-default options:
         gitsigns = false,
         hl_match_area = false,
         lazy = false,
-        lualine = false,
         mason = false,
         mini_cursorword = false,
         nvim_cmp = false,
@@ -77,9 +77,29 @@ A template for using the plugin with non-default options:
 > [!IMPORTANT]
 > To load the color scheme by default and use non-default options, you should load the options, then the scheme. This is how the template above is set up.
 
-## Extras
+Some plugins need extra configuration to work. These include:
 
-Matching color configurations are available for:
+<details>
+  <summary>Lualine</summary>
+
+### Lualine
+
+```lua
+ require('lualine').setup {
+  options = {
+    theme = "techbase"
+    -- ... your lualine config
+  }
+}
+```
+
+</details>
+
+## Plugin Support and Extras
+
+Techbase supports a growing list of plugins, found [here](https://github.com/mcauley-penney/techbase.nvim/tree/main/lua/techbase/plugins).
+
+Matching color configurations are available for external tools:
 
 - Ghostty
 - iTerm2
