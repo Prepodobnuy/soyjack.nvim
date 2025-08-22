@@ -110,5 +110,6 @@ Matching color schemes are available for external tools:
 - Kitty
 - Tmux
 - Warp
+- Wezterm
 
 Please see those tools' respective documentation for how to use these configurations.
