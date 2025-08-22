@@ -15,8 +15,8 @@ return {
   float_bg_select = "#1F242D",
 
   -- accent
-  v_select = "#121E42",
-  v_select_nontext = "#402D93",
+  v_select = "#13214B",
+  v_select_nontext = "#32416F",
   string = "#74BAA8",
   raw_string = "#0EC256",
   cursor = "#5DCD9A",
