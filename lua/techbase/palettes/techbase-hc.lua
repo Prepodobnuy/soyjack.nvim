@@ -1,23 +1,23 @@
 return {
   -- text
-  normal_fg = "#D3DBE9",
-  float_fg = "#DAE0EC",
-  nontext_fg = "#404457",
-  comment_fg = "#5B6081",
-  quote_fg = "#7E8193",
+  normal_fg = "#F5F7FA",
+  float_fg = "#FCFCFE",
+  nontext_fg = "#535667",
+  comment_fg = "#7578B0",
+  quote_fg = "#8A8D9D",
 
-  normal_bg = "#181C22",
+  normal_bg = "#13161B",
   panel_bg = "#1C2027",
-  float_bg = "#1F232B",
-  normal_bg_alt = "#1E232C",
+  float_bg = "#1E232B",
+  normal_bg_alt = "#282F3B",
   normal_bg_accent = "#222730",
 
   float_bg_border = "#323846",
   float_bg_select = "#232A35",
 
   -- accent
-  v_select = "#142550",
-  v_select_nontext = "#45319B",
+  v_select = "#16286F",
+  v_select_nontext = "#7A6BB7",
 
   string = "#79BEAC",
   raw_string = "#10C961",
