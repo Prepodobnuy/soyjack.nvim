@@ -1,5 +1,5 @@
 local M = {}
-local SUPPORTED_PLUGINS = require("techbase.plugins.supported_plugins")
+local SUPPORTED_PLUGINS = require("soyjack.plugins.supported_plugins")
 
 local defaults = {
   italic_comments = false,
@@ -35,11 +35,11 @@ end
 
 function M.load(theme)
   local ok
-  ok, theme = pcall(require, "techbase.palettes." .. theme)
-  theme = ok and theme or require("techbase.palettes.techbase")
+  ok, theme = pcall(require, "soyjack.palettes." .. theme)
+  theme = ok and theme or require("soyjack.palettes.soyjack")
 
   local c = vim.deepcopy(theme)
-  local group_fn = require("techbase.highlights")
+  local group_fn = require("soyjack.highlights")
   local groups = group_fn(c)
 
   groups["Comment"].italic = M.opts.italic_comments
@@ -61,7 +61,7 @@ function M.load(theme)
 
   for name, setting in pairs(M.opts.plugin_support) do
     if setting == true then
-      ok, module = pcall(require, "techbase.plugins." .. name)
+      ok, module = pcall(require, "soyjack.plugins." .. name)
       if ok then module(c, groups) end
     end
   end

@@ -1,4 +1,4 @@
-local tint = require("techbase.utils").tint
+local tint = require("soyjack.utils").tint
 
 return function(c, hl)
   hl["GitSignsAdd"] = { fg = c.git_add_col }

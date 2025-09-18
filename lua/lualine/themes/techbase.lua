@@ -1,4 +1,4 @@
-local c = require("techbase.palettes.techbase")
+local c = require("soyjack.palettes.soyjack")
 
 return {
   normal = {

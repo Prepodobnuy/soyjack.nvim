@@ -1,4 +1,4 @@
-local tint = require("techbase.utils").tint
+local tint = require("soyjack.utils").tint
 
 return function(c)
   local hl = {}
