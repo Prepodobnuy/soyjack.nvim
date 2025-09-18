@@ -4,20 +4,20 @@ return {
   normal_fg  = "#F5FAF7",
   float_fg   = "#FCFEFC",
   nontext_fg = "#536756",
-  comment_fg = "#9C9981",
+  comment_fg = "#5C5B49",
   quote_fg   = "#8A9D8D",
 
   -- background
-  normal_bg        = "#131B13",
-  panel_bg         = "#1C2716",
-  float_bg         = "#1E2B20",
-  normal_bg_alt    = "#283B2F",
-  normal_bg_accent = "#223027",
-  float_bg_border  = "#324638",
-  float_bg_select  = "#23352A",
+  normal_bg        = "#121711",
+  panel_bg         = "#1A2315",
+  float_bg         = "#1C281E",
+  normal_bg_alt    = "#25372C",
+  normal_bg_accent = "#202B23",
+  float_bg_border  = "#2E4135",
+  float_bg_select  = "#213228",
 
   -- accent
-  v_select         = "#68e882",
+  v_select         = "#43694B",
   v_select_nontext = "#7AB76B",
   string           = "#CFC569",
   raw_string       = "#C9BA32",
@@ -25,9 +25,9 @@ return {
   operator         = "#B68FA7",
   constant         = "#C2F1BE",
   keyword          = "#BE635B",
-  important        = "#73E794",
+  important        = "#F2E05A",
   search           = "#EDBE7A",
-  number           = "#335BBE",
+  number           = "#F5FAF7",
 
   -- notifications
   info  = "#1D95A4",
