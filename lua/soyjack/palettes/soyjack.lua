@@ -24,7 +24,7 @@ return {
   cursor           = "#63D5A3",
   operator         = "#B68FA7",
   constant         = "#db72c8",
-  keyword          = "#63BE5B",
+  keyword          = "#BE635B",
   important        = "#BEED7A",
   search           = "#EDBE7A",
   number           = "#C4FFDC",
