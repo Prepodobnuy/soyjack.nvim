@@ -17,20 +17,20 @@ return {
   float_bg_select  = "#213228",
 
   -- accent
-  v_select         = "#43694B",
+  v_select         = "#406040",
   v_select_nontext = "#7AB76B",
   string           = "#CFC569",
   raw_string       = "#C9BA32",
   cursor           = "#63D5A3",
   operator         = "#B68FA7",
-  constant         = "#C2F1BE",
-  keyword          = "#BE635B",
-  important        = "#F2E05A",
+  constant         = "#DB72C8",
+  keyword          = "#B86A63",
+  important        = "#FF6354",
   search           = "#EDBE7A",
-  number           = "#F5FAF7",
+  number           = "#C4FFDC",
 
   -- notifications
-  info  = "#1D95A4",
+  info  = "#1BE090",
   warn  = "#FFAF3A",
   error = "#FA1E3C",
 

@@ -149,12 +149,12 @@ return function(c)
   -- ************** TREESITTER **************
   -- https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md#highlights
   hl["@constant.builtin"] = { link = "Constant" }
-  hl["@function.call"] = { fg = "fg" }
-  hl["@function.method.call"] = { fg = "fg" }
+  hl["@function.call"] = { fg = c.important }
+  hl["@function.method.call"] = { fg = c.important }
   hl["@markup.heading"] = { link = "Function" }
   hl["@markup.raw.block"] = { link = "markdownCodeBlock" }
-  hl["@method.call"] = { fg = "fg" }
-  hl["@module"] = { fg = "fg" }
+  hl["@method.call"] = { fg = c.important }
+  hl["@module"] = { fg = c.important }
   hl["@namespace"] = { fg = c.important }
   hl["@number.comment"] = { link = "Comment" }
   hl["@property"] = { fg = "fg" }
